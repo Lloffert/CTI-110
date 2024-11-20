@@ -1,6 +1,6 @@
 # Lydia Loffert
 # 11/18/2024
-# P5LAB
+# P5HW
 # Use functions to create a game with characters
 
 '''
@@ -17,9 +17,9 @@ how can the characters be used in this setting?
 character doesnt have to be made by player they can choose between two (AS LONG AS THEY ARE DICTIONARIES)
 maybe game doenst change much depending on charcater you choose but its starts differnt and you encounter the other character if you
 dont choose them. they solve the same puzzles but maybe you have to get the other player's item off of them
-
-
-
+'''
+# helplab 9am to 1pm FRI
+'''
 USE COMMENTS
 
 can there be a text parser? can i make a dictionary of usable vocab words
@@ -42,33 +42,113 @@ settings:?
     * other character's room that you can talk to/get something from
     * long hallway with an elevator at the end, the hallway seems almost to rotate as it stretches on, at the very end is an elevator.
     [go down hallway] You walk down the hallway, you don't feel like you're turning, but when you look back the door you came from has moved to the wall.
-    * "You feel someone watching you" (never explained)
+    * "You feel someone watching you" (never explained
     *
+
+    NOT GOING TO WORK WRAP IT UP
+
+    small bathroom
+    what actions should happen:
+    enemy encounter
+    get item
+    use item
+
+maybe instead of an "attack" you "attack" the elevator with the crowbar until it opens
+    
 '''
+
+# Import libraries
 import random
 
-def display_character(character):
-    for key, value in character.items():
-        print(f'{key}: {value}')
-        print()
+def create_character():
+    """
+    Create a game character by collecting user input.
+    
+    Returns:
+    dict: A dictionary representing the game character with user-provided attributes.
+    """
+    
+    name = input("Enter character name: ").strip()
+    health = int(input(f"Enter {name}'s health: "))
+    atk_damage = int(input(f"Enter {name}'s attack damage: "))
+    
+    character = {
+        "name": name,
+        "health": health,
+        "damage": atk_damage
+    }
+    
+    return character
 
-def battle()
+
+def display_character(character):
+    print("---------")
+    for key, value in character.items():
+        print(f"{key}: {value}")
+    print()
+
+
+def battle(attacker, defender):
+    """
+    Simulate a battle where the attacker deals damage to the victim.
+    
+    Args:
+        attacker (dict): Dictionary representing the attacking character
+        defender (dict): Dictionary representing the defending character
+    
+    Returns:
+        dict: Updated defender dictionary with reduced health
+    """
+    print(f"{attacker['name']} is attacking {defender['name']}!!!!")
+    print(f"")
+    defender['health'] -= attacker['damage']
+    
+    return defender
+
+def crowbar():
     
 
-# define the main
+
+def bathroom():
+
+    room = {
+        "item": crowbar,
+        "elevator": elevator
+    }
+
+def get_item():
+
+    
+
+    
+
+
+
+# Define the main
 def main():
     print("Game is starting....")
     print("\n\n\n")
-    # Create characters (MIGHT NOT USE)
+    
+    # Create two characters
     print("Create first character: ")
     char1 = create_character()
+    print("\nCreate second character: ")
+    char2 = create_character()
+    print()
 
-    #display created characters
+    # Display the created characters
     display_character(char1)
+    display_character(char2)
 
-    # simulate a battle
-    battle(ARGHHH )
+    # Simulate a battle
+    char2 = battle(char1, char2)
 
-# call the main
+    display_character(char2)
+
+
+# Call the main
 if __name__ == "__main__":
     main()
+
+
+
