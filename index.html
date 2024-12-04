@@ -1,107 +1,143 @@
 <!DOCTYPE html>
-
 <head>
-
 <html lang="en">
-
 <meta charset="UTF-8">
-
 <title>Panorama-VisionTV</title>
-
 <style> 
-    .container { 
-		display: flex; 
-		justify-content: space-between; /* Optional for spacing */ 
-    } 
-    .div1 { 
-		width: 45%; /* Adjust width as needed */ 
-		margin: 2%; /* Optional for spacing */ 
-    } 
-
+	.container {
+	  display: flex; 
+	  justify-content: flex-end;
+	  text-align:center;
+	}
+	.item-center {
+	  margin: auto;
+	  text-align:center;
+	}
+	.grid {
+	  display: grid;
+	}
+	.center {
+	  margin: auto;
+	  text-align: center;
+	}
+	.right {
+	  text-align: right;
+	  margin: auto;
+	}
+	.left {
+	  text-align: left;
+	  margin: auto;
+	}
+	
 </style>
-
 </head>
-
-
 <body>
 
 <!--Your HTML tags will start here-->
 
-<!--!####DELETEL8R have a youtube video, maybe include trailers for the shows -->
-
 
 <!--Title spread, should be an image instead of text-->
-<div class="container">
-<!--??????????????????????????-->
-	<div class="div1">
 
-		<h1 style="text-align: center;">PLACEHOLDER TITLE</h1>
-	</div>
-
-	<!--Github Link-->
-	<div class="element2">
-		<p style="text-align:right;">
+	<div class="container">
+		<div class="item-center">
+		<!--Title Banner-->
+			<h1>PLACEHOLDER TITLE</h1>
+		</div>
+		<!--Github Link-->
+		<div>
 			<a href="https://github.com/Lloffert/CTI-110" target=_blank>PLACEHOLDER #draw the logo#</a>
-		</p>
+		</div>
 	</div>
-
-</div>
 	
+<br><br><br>
+
+<!--scrolling photo reel of the program shows-->
+</div>
+	<div style="text-align:center"class="scroll-container">
+  <img src="img_5terre.jpg" alt="Cinque Terre">
+  <img src="img_forest.jpg" alt="Forest">
+  <img src="img_lights.jpg" alt="Northern Lights">
+  <img src="img_mountains.jpg" alt="Mountains">
+</div>
+
+<br><br><br><br><br>
 	
 <!--Website links-->
-<div style=
-"text-align:center:
-text-decoration:none;
-font-weight:bold;
-color:black"> 
-
-	 <p>
-	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="index.html">Home</a>
-	 &nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="Table.html">Content</a>
-	  &nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="Form.html">Form</a>
-	  &nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="https://www.google.com/">Google</a>
-	 </p>
+<div class="grid">
+	<p class="center"style=
+		"text-decoration:none;
+		font-weight:bold;
+		color:black">
+		Check out some of our upcoming shows! 
+		 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="index.html"target="_blank">Home</a>
+		 &nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="Table.html"target="_blank">Content</a>
+		  &nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="Form.html"target="_blank">Form</a>
+		  &nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://www.google.com/"target="_blank">Google</a>
+	</p>
 	 
 </div>
 
 <br><br>
 
-<!--Program schedule table-->
-<table border='1'>
-	<tr> <th>Subject</th> 
-		<th>Module</th> 
-		<th>Description</th> 
-	</tr>
-	
-	<tr> 
-		<td>HTML</td> 
-		<td>Module1</td> 
-		<td>HTML Basics</td> 
-	</tr>
-	
-	<tr> 
-		<td>Databases</td> 
-		<td>Module2</td> 
-		<td>Relational Database Basics</td> 
-	</tr>
-	
-	<tr> 
-		<td rowspan="5">Python</td> 
-		<td>Module3</td> 
-		<td>Intro to Python</td> 
-	</tr>
-	<tr>
-		<td>Module4</td>
-		<td>Variables</td>
+<!--About information #MAKE TEXT BIGGER-->
+<div class="grid">
+	<p class="center"style="font-size:20px;
+	margin-right:50px;
+	margin-left:50px;
+	line-height: 1.5">
+	Panorama-VisionTV is hdbvj hfsfds vfjhd svfjh dsvfjhdhdbvj hfsfds vfjhd svfjh dsvfjhd svfjhdsvf jhdsvfjhhdbvj hfsfds vfjhd svfjh dsvfjhd svfjhdsvf jhdsvfjhhdbvj hfsfds vfjhd svfjh dsvfjhd svfjhdsvf jhdsvfjhhdbvj hfsfds vfjhd svfjh dsvfjhd svfjhdsvf jhdsvfjhhdbvj hfsfds vfjhd svfjh dsvfjhd svfjhdsvf jhdsvfjhhdbvj hfsfds vfjhd svfjh dsvfjhd svfjhdsvf jhdsvfjhhdbvj hfsfds vfjhd svfjh dsvfjhd svfjhdsvf jhdsvfjhhdbvj hfsfds vfjhd svfjh dsvfjhd svfjhdsvf jhdsvfjhhdbvj hfsfds vfjhd svfjh dsvfjhd svfjhdsvf jhdsvfjhhdbvj hfsfds vfjhd svfjh dsvfjhd svfjhdsvf jhdsvfjhhdbvj hfsfds vfjhd svfjh dsvfjhd svfjhdsvf jhdsvfjh svfjhdsvf jhdsvfjh </p>
+</div>
 
-</table>
+<br><br><br><br><br>
+<!--Program schedule table-->
+<div class="grid">
+
+		<table class="center"style="width:50%;
+		margin:auto;
+		font-size:20px"
+		border='1'>
+		
+			<tr> <th>Subject</th> 
+				<th>Module</th> 
+				<th>Description</th> 
+			</tr>
+			
+			<tr> 
+				<td>HTML</td> 
+				<td>Module1</td> 
+				<td>HTML Basics</td> 
+			</tr>
+			
+			<tr> 
+				<td>Databases</td> 
+				<td>Module2</td> 
+				<td>Relational Database Basics</td> 
+			</tr>
+			
+			<tr> 
+				<td rowspan="5">Python</td> 
+				<td>Module3</td> 
+				<td>Intro to Python</td> 
+			</tr>
+			<tr>
+				<td>Module4</td>
+				<td>Variables</td>
+			</tr>
+			<tr>
+				<td>Module4</td>
+				<td>Variables</td>
+			</tr>
+			<tr>
+				<td>Module4</td>
+				<td>Variables</td>
+			</tr>
+		</table>
+</div>
 
 <!--Your HTML tags will end here-->
-
 </body>
-
 </html>
